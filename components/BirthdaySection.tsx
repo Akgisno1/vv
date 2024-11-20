@@ -86,7 +86,7 @@ const BirthdaySection = () => {
       />
       <BoxReveal boxColor={"#ffffff"} duration={1}>
         <p
-          className="text-8xl font-bold font-oxo text-white mb-4 birthday-text"
+          className="text-[22vw] font-bold font-oxo text-white mb-4 birthday-text"
           style={{
             textShadow:
               "0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3)",
@@ -107,7 +107,7 @@ const BirthdaySection = () => {
         ].map((text, index) => (
           <p
             key={index}
-            className="text-4xl font-rubik font-semibold opacity-0 text-white birthday-text"
+            className="text-[7vw] font-rubik font-semibold opacity-0 text-white birthday-text"
             style={{
               textShadow:
                 "0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2)",

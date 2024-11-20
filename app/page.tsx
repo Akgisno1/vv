@@ -7,7 +7,7 @@ import FanSection from "@/components/FanSection";
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen snap-y snap-mandatory  overflow-y-scroll scroll-smooth">
+    <main className="w-screen h-screen snap-y snap-mandatory overflow-x-hidden  overflow-y-scroll scroll-smooth">
       <div className="h-screen  w-screen snap-start">
         <MoonSection />
       </div>

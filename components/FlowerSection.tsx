@@ -7,6 +7,7 @@ const FlowerSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const pTextRef = useRef<HTMLParagraphElement>(null); // Reference for the <p> tag
   const [bgColor, setBgColor] = useState("bg-black");
+  const hasAnimationTriggered = useRef(false); // Flag to track animation
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -18,8 +19,8 @@ const FlowerSection = () => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
           setBgColor("bg-yellow-200"); // Change to yellowish white
 
-          // Trigger the typing animation when section is in view
-          if (pTextRef.current) {
+          // Trigger the typing animation only once
+          if (pTextRef.current && !hasAnimationTriggered.current) {
             const text =
               "Have a wonderful day and a Great Year Ahead! Jaldi se Party do! And of course keep smiling as always !  💐💐💐💐💐💐💐";
 
@@ -39,6 +40,7 @@ const FlowerSection = () => {
 
             // Start typing once the section is in view
             typeText();
+            hasAnimationTriggered.current = true; // Mark animation as triggered
           }
         } else {
           setBgColor("bg-black");
@@ -72,7 +74,7 @@ const FlowerSection = () => {
       />
       <p
         ref={pTextRef}
-        className="text-3xl font-rubik font-black text-justify text-amber-700 mx-4 mt-[50vh] dark:text-white"
+        className="text-[6vw] font-rubik font-black text-justify text-amber-700 mx-4 mt-[50vh] dark:text-white"
       >
         {/* Text will be typed dynamically */}
       </p>

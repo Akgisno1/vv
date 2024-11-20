@@ -58,10 +58,10 @@ const FlowerSection = () => {
         <source src="/sun.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <p className="z-10 text-4xl font-bold font-mont text-white">
+      <p className="z-10 text-[8vw] font-bold font-mont text-white">
         Ye Aapke liye
       </p>
-      <p className="z-10 mt-10 text-2xl font-bold text-white text-justify font-mont">
+      <p className="z-10 mt-10 text-[5.7vw] font-bold text-white text-justify font-mont">
         Why Sunflowers you ask? Pata Nai Bas Aisehi. Maybe I think you resemble
         one. 🌻🌻
       </p>
